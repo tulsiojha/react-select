@@ -16,18 +16,18 @@ The React Select is a customizable and accessible dropdown select component for 
 
 ## Installation
 
-You can install the React Select component via [npm](https://www.npmjs.com/package/@oshq/react-select/):
+You can install the React Select component via [npm](https://www.npmjs.com/package/@zener/react-select/):
 
 ```bash
-npm i @oshq/react-select
+npm i @zener/react-select
 ```
 ## Usage
 
 #### Basic Implementation
 
 ```jsx
-import Select from '@oshq/react-select';
-import '@oshq/react-select/index.css';
+import Select from '@zener/react-select';
+import '@zener/react-select/index.css';
 
 const App = () => {
   const [selected, setSelected] = useState(undefined);

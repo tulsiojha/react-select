@@ -9,7 +9,7 @@ async function build(path) {
   const esbuildConfig = {
     entryPoints: [file],
     packages: 'external',
-    external: ['@radix-ui/*', 'framer-motion', 'classnames'],
+    external: ['@radix-ui/*', 'framer-motion', 'classnames', 'virtua'],
     bundle: true,
     sourcemap: false,
     format: 'cjs',
@@ -41,7 +41,7 @@ async function build(path) {
     dts: { only: true },
     outDir: dist,
     silent: true,
-    external: [/@radix-ui\/.+/, 'classnames', 'framer-motion'],
+    external: [/@radix-ui\/.+/, 'classnames', 'framer-motion', 'virtua'],
   });
   console.log(`Built ${path}/dist/index.d.ts`);
 }
